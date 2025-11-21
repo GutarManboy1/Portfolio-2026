@@ -1,21 +1,42 @@
 import { useRef } from "react";
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
-
   const sectionRef = useRef(null);
   const applecloneRef = useRef(null);
   const milkbarRef = useRef(null);
   const xoraRef = useRef(null);
 
+
   useGSAP(() => {
-    gsap.fromTo(sectionRef.current,
-      {opacity: 0},
-      {opacity: 1, duration: 1.5})
+
+     const projects = [applecloneRef.current, milkbarRef.current, xoraRef.current];
+
+    projects.forEach((project, index) => {
+      gsap.fromTo(
+        project,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: (index + 1) * 0.3,
+          scrollTrigger: {
+            trigger: project,
+            start: "top bottom",
+          },
+        }
+      );
+    });
+    gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5 }
+    );
   }, []);
 
   return (
@@ -56,7 +77,6 @@ const Showcase = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

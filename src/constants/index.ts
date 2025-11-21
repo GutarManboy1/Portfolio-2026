@@ -22,17 +22,17 @@ const words = [
   { text: "Concepts", imgPath: "/images/concepts.svg" },
   { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Dreams", imgPath: "/images/ideas.svg" },
+  { text: "Thoughts", imgPath: "/images/concepts.svg" },
+  { text: "What Ifs", imgPath: "/images/designs.svg" },
+  { text: "Fantasy", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
   { value: 2, suffix: "+", label: "Years of Experience" },
-  { value: 3, suffix: "+", label: "Keyboards Smashed" },
+  { value: 60, suffix: "+", label: "Repos on GitHub" },
   { value: 30, suffix: "+", label: "Completed Projects" },
-  { value: 900, suffix: "+", label: "Neurons Fired" },
+  { value: 9000, suffix: "+", label: "Neurons Fired" },
 ];
 
 const logoIconsList = [
