@@ -74,18 +74,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "🧘🏽‍♂️ Focus Master ",
+    description: "Delivering high-quality results while maintaining attention to every detail. I work diligently to ensure excellence in all aspects of my projects. You can count on me to deliver the best possible outcome for your project.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "🗣️ Smooth Communicator",
+    description: "Keeping you updated at every step to ensure transparency and clarity. I prioritize clear and open communication throughout the project. You never have to wonder about the status of your project.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "🎵 Right On Time Delivery",
+    description: "Making sure projects are completed on schedule, with quality & attention to detail. I understand the importance of deadlines and strive to deliver timely results without compromising on quality.",
   },
 ];
 
