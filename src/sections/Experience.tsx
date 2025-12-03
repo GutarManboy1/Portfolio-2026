@@ -26,6 +26,33 @@ const Experience = () => {
                     </div>
                   </GlowCard>
                 </div>
+
+                {/* right side content */}
+                <div className="xl:w-4/6">
+                  <div className="flex items-start">
+                    <div className="timeline-wrapper">
+                      <div className="timeline"/>
+                      <div className="gradient-line h-full w-1"/>
+                    </div>
+
+                    {/* experience text goes here */}
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                      <div className="timeline-logo">
+                        <img src={card.logoPath} alt="logo" />
+                      </div>
+                      <div>
+                        <h1 className="text-semibold text-3xl">{card.title}</h1>
+                        <p className="my-5 text-white-50">🗓️ {card.date}</p>
+                        <p className="text-[#839cb5] italic">Responsibilites</p>
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                          {card.responsibilities.map((responsibility, idx) => (
+                            <li key={responsibility} className="text-lg">{responsibility}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
