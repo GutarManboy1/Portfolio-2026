@@ -1,9 +1,56 @@
-import { div, exp } from "three/tsl";
 import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
 import GlowCard from "../components/GlowCard";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 const Experience = () => {
+  useGSAP(() => {
+    gsap.utils.toArray(".timeline-card").forEach((card) => {
+      gsap.from(card, {
+        xPercent: -100,
+        opacity: 0,
+        transformOrigin: "left left",
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+        },
+      });
+    });
+
+    gsap.to(".timeline", {
+      transformOrigin: "bottom bottom",
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: ".timeline",
+        start: "top center",
+        end: "70% center",
+        onUpdate: (self) => {
+          gsap.to(".timeline", {
+            scaleY: 1 - self.progress,
+          });
+        },
+      },
+    });
+    gsap.utils.toArray(".expText").forEach((text) => {
+      gsap.from(text, {
+        xPercent: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 60%",
+        },
+      });
+    });
+  }, []);
+
   return (
     <section
       id="experience"
@@ -22,7 +69,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} index={index}>
                     <div>
-                    <img src={card.imgPath} alt={card.title} />
+                      <img src={card.imgPath} alt={card.title} />
                     </div>
                   </GlowCard>
                 </div>
@@ -31,8 +78,8 @@ const Experience = () => {
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
                     <div className="timeline-wrapper">
-                      <div className="timeline"/>
-                      <div className="gradient-line h-full w-1"/>
+                      <div className="timeline" />
+                      <div className="gradient-line h-full w-1" />
                     </div>
 
                     {/* experience text goes here */}
@@ -46,7 +93,9 @@ const Experience = () => {
                         <p className="text-[#839cb5] italic">Responsibilites</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map((responsibility, idx) => (
-                            <li key={responsibility} className="text-lg">{responsibility}</li>
+                            <li key={responsibility} className="text-lg">
+                              {responsibility}
+                            </li>
                           ))}
                         </ul>
                       </div>
