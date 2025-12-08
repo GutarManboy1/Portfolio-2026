@@ -149,7 +149,7 @@ const expCards = [
   {
     review: "Glenn's contributions brought creativity and technical expertise to the team at Iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    logoPath: "/images/iiba-logo.png",
     title: "Full Stack Developer",
     date: "August 2025 - October 2025",
     responsibilities: [
