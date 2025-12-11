@@ -119,8 +119,14 @@ const techStackIcons = [
     scale: 1,
     rotation: [0, 0, 0],
   },
+   {
+    name: "Typescript Developer",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
   {
-    name: "Python Developer",
+    name: "Python Developer (working on it)",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -138,7 +144,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git Master",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -201,45 +207,45 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Guts",
+    mentions: "@aaaahhhhhhhhh",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I dont know what to say about Glenn. I dunno...his ability to weld the swords of code and design together is remarkable. His dedication to the dark arts of web development and his clients is evident in every project he undertakes. If you’re looking for a web developer who can bring your vision or loved ones back to life then Glenn is your guy.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Finn the Human",
+    mentions: "@landofooo",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
-    review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Oh my glob, this developer is SO MATH! I hired them to help build a new app for tracking all my adventures across the Land of Ooo, and they totally crushed it! They explained all the TypeScript stuff in a way that even I could understand, and when I had like a billion ideas that didn't make sense, they helped me figure out what would actually work.10/10 would definitely hire again for my next heroic coding quest! WHAT TIME IS IT? Time to hire this developer!",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Shinji Ikari",
+    mentions: "@father",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
+      "I... I wasn't sure I could work with a developer at first. I thought I'd just mess everything up or ask the wrong questions. But they were really patient with me, even when I second-guessed every decision about the project. He built exactly what I needed, and they actually listened when I explained what I wanted - which doesn't happen very often. I kept thinking I was bothering them with my requests, but they said it was fine and just kept working through everything methodically.I guess what I'm trying to say is... they made the whole process less scary? They were professional and knew their TypeScript and React really well. When I didn't understand something technical, they'd explain it without making me feel stupid.I don't know if I deserve to leave a review this positive, but... they did really good work. If you need a developer, they won't let you down. That's more than I can say about myself most days.",
+    imgPath: "/images/client3.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Albert Einstein",
+    mentions: "@relativitygoat",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "In my experience, true elegance in problem-solving comes not from complexity, but from finding the simplest path through seemingly insurmountable challenges - and this developer exemplifies that principle beautifully. Working with him was like collaborating with a fellow physicist - he asked the right questions, challenged assumptions when necessary, and maintained an infectious curiosity throughout our project. I would recommend his services to anyone seeking not merely a technician, but a thoughtful partner in the pursuit of innovative solutions.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Miles Davis",
+    mentions: "@cocaineislife",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "This cat's got the chops. If you want someone who understands that real innovation comes from discipline and taste, call this developer - he's the real deal, man.",
+    imgPath: "/images/client5.png",
+  },
+  {
+    name: "Jerry Garcia",
+    mentions: "@fupartistic",
+    review:
+      "Man, what a trip working with this developer. They've got this beautiful flow to how they code - like they're jamming with the machine, you know? It's not rigid or uptight; they let the project breathe and evolve naturally while still keeping everything grounded and functional. Real nice balance there. They're a real pro, man. Can I have a bump?",
     imgPath: "/images/client6.png",
   },
 ];

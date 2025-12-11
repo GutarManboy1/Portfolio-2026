@@ -5,6 +5,7 @@ import LogoSection from "./sections/LogoSection";
 import FeaturesCards from "./sections/FeaturesCards";
 import Experience from "./sections/Experience";
 import TechStack from "./sections/TechStack";
+import Testimonials from "./sections/Testimonials";
 
 const App = () => {
   return (
@@ -12,10 +13,11 @@ const App = () => {
       <Navbar />
       <Hero />
       <Showcase />
-      <LogoSection />
+      {/* <LogoSection /> */}
       <FeaturesCards />
       <Experience />
       <TechStack />
+      <Testimonials />
     </>
   );
 };
