@@ -125,12 +125,12 @@ const techStackIcons = [
     scale: 0.8,
     rotation: [0, 0, 0],
   },
-  {
-    name: "Python Developer (working on it)",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
+  // {
+  //   name: "Python Developer (working on it)",
+  //   modelPath: "/models/python-transformed.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
   {
     name: "Backend Developer",
     modelPath: "/models/node-transformed.glb",
@@ -144,7 +144,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Git Master",
+    name: "Git Fledgling",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
