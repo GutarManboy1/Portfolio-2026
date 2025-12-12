@@ -11,5 +11,5 @@ export default function SplineScene() {
     }
   }, []);
 
-  return <canvas  ref={canvasRef} style={{ width: '65%', height: '85%', backgroundColor: 'black', margin: 'auto', borderRadius: '80px', border: '2px solid #1a1a40'}} />;
+  return <canvas  ref={canvasRef} style={{ width: '65%', height: '85%', backgroundColor: 'black', margin: 'auto', borderRadius: '100px', border: '2px solid #1a1a40'}} />;
 }
