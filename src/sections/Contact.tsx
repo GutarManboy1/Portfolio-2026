@@ -1,10 +1,10 @@
 import { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
 // import ContactExperience from "../components/models/contact/ContactExperience";
 
-import ContactExperience from "../components/HeroModels/ContactExperience";
+
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -15,12 +15,12 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true); // Show loading state
 
@@ -28,7 +28,7 @@ const Contact = () => {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
+        formRef.current!,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
@@ -48,7 +48,8 @@ const Contact = () => {
           title="Get in Touch"
           subtitle="Contact Me 📮 and Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
+
+        <div className="mt-16">
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form
@@ -90,7 +91,7 @@ const Contact = () => {
                     value={form.message}
                     onChange={handleChange}
                     placeholder="We can only see a short distance ahead, but we can see plenty there that needs to be done."
-                    rows="5"
+                    rows={5}
                     required
                   />
                 </div>
@@ -109,11 +110,15 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+          {/* <div className="xl:col-span-7 min-h-96"> */}
+
+            {/* this section is for the 3d model experience on the contact page */}
+
+            {/* <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <ContactExperience />
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
+
         </div>
       </div>
     </section>

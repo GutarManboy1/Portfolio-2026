@@ -208,7 +208,7 @@ const expLogos = [
 const testimonials = [
   {
     name: "Guts",
-    mentions: "@aaaahhhhhhhhh",
+    mentions: "@griffith!",
     review:
       "I dont know what to say about Glenn. I dunno...his ability to weld the swords of code and design together is remarkable. His dedication to the dark arts of web development and his clients is evident in every project he undertakes. If you’re looking for a web developer who can bring your vision or loved ones back to life then Glenn is your guy.",
     imgPath: "/images/client1.png",
@@ -254,10 +254,12 @@ const socialImgs = [
   
   {
     name: "github",
+    url: "https://github.com/GutarManboy1",
     imgPath: "/images/github.png",
   },
   {
     name: "linkedin",
+    url: "https://www.linkedin.com/in/glenn-torrens/",
     imgPath: "/images/linkedin.png",
   },
 ];
