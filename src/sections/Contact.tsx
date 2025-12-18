@@ -4,8 +4,6 @@ import emailjs from "@emailjs/browser";
 import TitleHeader from "../components/TitleHeader";
 // import ContactExperience from "../components/models/contact/ContactExperience";
 
-
-
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -15,7 +13,9 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
@@ -78,7 +78,7 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="alan.turing@balls.com"
+                    placeholder="alan.turing@machinebrain.com"
                     required
                   />
                 </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="We can only see a short distance ahead, but we can see plenty there that needs to be done."
+                    placeholder="Hi, Glenn! We can only see a short distance ahead, but we can see plenty there that needs to be done."
                     rows={5}
                     required
                   />
@@ -112,13 +112,12 @@ const Contact = () => {
           </div>
           {/* <div className="xl:col-span-7 min-h-96"> */}
 
-            {/* this section is for the 3d model experience on the contact page */}
+          {/* this section is for the 3d model experience on the contact page */}
 
-            {/* <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+          {/* <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <ContactExperience />
             </div> */}
           {/* </div> */}
-
         </div>
       </div>
     </section>

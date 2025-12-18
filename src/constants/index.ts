@@ -75,17 +75,20 @@ const abilities = [
   {
     imgPath: "/images/seo.png",
     title: "🧘🏽‍♂️ Focus Master ",
-    description: "Delivering high-quality results while maintaining attention to every detail. I work diligently to ensure excellence in all aspects of my projects. You can count on me to deliver the best possible outcome for your project.",
+    description:
+      "Delivering high-quality results while maintaining attention to every detail. I work diligently to ensure excellence in all aspects of my projects. You can count on me to deliver the best possible outcome for your project.",
   },
   {
     imgPath: "/images/chat.png",
     title: "🗣️ Smooth Communicator",
-    description: "Keeping you updated at every step to ensure transparency and clarity. I prioritize clear and open communication throughout the project. You never have to wonder about the status of your project.",
+    description:
+      "Keeping you updated at every step to ensure transparency and clarity. I prioritize clear and open communication throughout the project. You never have to wonder about the status of your project.",
   },
   {
     imgPath: "/images/time.png",
     title: "🎵 Right On Time Delivery",
-    description: "Making sure projects are completed on schedule, with quality & attention to detail. I understand the importance of deadlines and strive to deliver timely results without compromising on quality.",
+    description:
+      "Making sure projects are completed on schedule, with quality & attention to detail. I understand the importance of deadlines and strive to deliver timely results without compromising on quality.",
   },
 ];
 
@@ -119,7 +122,7 @@ const techStackIcons = [
     scale: 1,
     rotation: [0, 0, 0],
   },
-   {
+  {
     name: "Typescript Developer",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
@@ -153,7 +156,8 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Glenn's contributions brought creativity and technical expertise to the team at Iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
+    review:
+      "Glenn's contributions brought creativity and technical expertise to the team at Iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/iiba-logo.png",
     title: "Full Stack Developer",
@@ -165,7 +169,8 @@ const expCards = [
     ],
   },
   {
-    review: "Glenn’s contributions to Robinson Consulting's our team was exceptional. His technical expertise and problem-solving skills have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Glenn’s contributions to Robinson Consulting's our team was exceptional. His technical expertise and problem-solving skills have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "UI/UX Design and Frontend Development",
@@ -177,7 +182,8 @@ const expCards = [
     ],
   },
   {
-    review: "Glenn’s work on Goldware Park's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience and met our product goals.",
+    review:
+      "Glenn’s work on Goldware Park's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience and met our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "Software Developer",
@@ -215,7 +221,7 @@ const testimonials = [
   },
   {
     name: "Finn the Human",
-    mentions: "@landofooo",
+    mentions: "@floopedpig",
     review:
       "Oh my glob, this developer is SO MATH! I hired them to help build a new app for tracking all my adventures across the Land of Ooo, and they totally crushed it! They explained all the TypeScript stuff in a way that even I could understand, and when I had like a billion ideas that didn't make sense, they helped me figure out what would actually work.10/10 would definitely hire again for my next heroic coding quest! WHAT TIME IS IT? Time to hire this developer!",
     imgPath: "/images/client2.png",
@@ -236,14 +242,14 @@ const testimonials = [
   },
   {
     name: "Miles Davis",
-    mentions: "@cocaineislife",
+    mentions: "@brewingbitches",
     review:
       "This cat's got the chops. If you want someone who understands that real innovation comes from discipline and taste, call this developer - he's the real deal, man.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Jerry Garcia",
-    mentions: "@fupartistic",
+    mentions: "@sugaree",
     review:
       "Man, what a trip working with this developer. They've got this beautiful flow to how they code - like they're jamming with the machine, you know? It's not rigid or uptight; they let the project breathe and evolve naturally while still keeping everything grounded and functional. Real nice balance there. They're a real pro, man. Can I have a bump?",
     imgPath: "/images/client6.png",
@@ -251,12 +257,11 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  
-  {
-    name: "github",
-    url: "https://github.com/GutarManboy1",
-    imgPath: "/images/github.png",
-  },
+  // {
+  //   name: "github",
+  //   url: "https://github.com/GutarManboy1",
+  //   imgPath: "/images/github.png",
+  // },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/glenn-torrens/",
