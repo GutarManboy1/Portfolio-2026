@@ -166,7 +166,9 @@ const expCards = [
       "Developed and maintained user-facing features for the Iiba platform.",
       "Collaborated closely with engineers to ensure seamless user experiences.",
       "Optimized mobile application for maximum performance.",
-    ],
+      "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
+      "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
+    ]
   },
   {
     review:
@@ -176,7 +178,9 @@ const expCards = [
     title: "UI/UX Design and Frontend Development",
     date: "October 2024 - January 2025",
     responsibilities: [
-      "Led the development of responsive and user-friendly interfaces, focusing on scalability.",
+      "Worked on the development of responsive and user-friendly interfaces, focusing on scalability.",
+      "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
+      "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
       "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
       "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
     ],
@@ -249,7 +253,7 @@ const testimonials = [
   },
   {
     name: "Jerry Garcia",
-    mentions: "@sugaree",
+    mentions: "@terrapinflyer",
     review:
       "Man, what a trip working with this developer. They've got this beautiful flow to how they code - like they're jamming with the machine, you know? It's not rigid or uptight; they let the project breathe and evolve naturally while still keeping everything grounded and functional. Real nice balance there. They're a real pro, man. Can I have a bump?",
     imgPath: "/images/client6.png",
