@@ -261,11 +261,11 @@ const testimonials = [
 ];
 
 const socialImgs = [
-  // {
-  //   name: "github",
-  //   url: "https://github.com/GutarManboy1",
-  //   imgPath: "/images/github.png",
-  // },
+  {
+    name: "github",
+    url: "https://github.com/GutarManboy1",
+    imgPath: "/images/github.png",
+  },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/glenn-torrens/",
