@@ -163,10 +163,10 @@ const expCards = [
     title: "Full Stack Developer",
     date: "August 2025 - October 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Iiba platform.",
+      "Developed and maintained useful features for the Iiba platform.",
       "Collaborated closely with engineers to ensure seamless user experiences.",
       "Optimized mobile application for maximum performance.",
-      "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
+      "Worked with backend developers and project manager to integrate APIs seamlessly with the frontend.",
       "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
     ]
   },
@@ -193,7 +193,7 @@ const expCards = [
     title: "Software Developer",
     date: "August 2024 - September 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native and Typescript.",
+      "Built and maintained cross-platform mobile app using React Native and Typescript.",
       "Created websites using Wordpress for various clients.",
       "Coordinated with the design team to implement features based on feedback and suggestions.",
     ],
