@@ -160,7 +160,7 @@ const expCards = [
       "Glenn's contributions brought creativity and technical expertise to the team at Iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/iiba-logo.png",
-    title: "Full Stack Developer",
+    title: "Full Stack Developer | Tokyo, Japan (Remote)",
     date: "August 2025 - October 2025",
     responsibilities: [
       "Developed and maintained useful features for the Iiba platform.",
@@ -175,7 +175,7 @@ const expCards = [
       "Glenn’s contributions to Robinson Consulting's our team was exceptional. His technical expertise and problem-solving skills have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "UI/UX Design and Frontend Development",
+    title: "UI/UX Design and Frontend Development | Tokyo, Japan",
     date: "October 2024 - January 2025",
     responsibilities: [
       "Worked on the development of responsive and user-friendly interfaces, focusing on scalability.",
@@ -190,7 +190,7 @@ const expCards = [
       "Glenn’s work on Goldware Park's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience and met our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "Software Developer",
+    title: "Software Developer | Tokyo, Japan",
     date: "August 2024 - September 2024",
     responsibilities: [
       "Built and maintained cross-platform mobile app using React Native and Typescript.",
