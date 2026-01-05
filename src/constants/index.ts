@@ -29,9 +29,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 2, suffix: "+", label: "Years of Experience" },
+  { value: 3, suffix: "~", label: "Years of Experience" },
   { value: 60, suffix: "+", label: "Repos on GitHub" },
-  { value: 30, suffix: "+", label: "Completed Projects" },
+  { value: 30, suffix: "~", label: "Completed Projects" },
   { value: 9000, suffix: "+", label: "Neurons Fired" },
 ];
 
@@ -157,22 +157,21 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Glenn's contributions brought creativity and technical expertise to the team at Iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
+      "Glenn's contributions brought creativity and technical expertise to the team at iiba, significantly improving our backend functions. His work has been invaluable in delivering a better user experience.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/iiba-logo.png",
+    logoPath: "/images/logo1.png",
     title: "Full Stack Developer | Tokyo, Japan (Remote)",
     date: "August 2025 - October 2025",
     responsibilities: [
-      "Developed and maintained useful features for the Iiba platform.",
+      "Developed and maintained useful features for the iiba platform.",
       "Collaborated closely with engineers to ensure seamless user experiences.",
-      "Optimized mobile application for maximum performance.",
-      "Worked with backend developers and project manager to integrate APIs seamlessly with the frontend.",
+      "Developed and maintained useful features for the iiba platform.",
       "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
     ]
   },
   {
     review:
-      "Glenn’s contributions to Robinson Consulting's our team was exceptional. His technical expertise and problem-solving skills have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Glenn’s contributions to Robinson Consulting's team was exceptional. His technical savvy and problem-solving skills have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "UI/UX Design and Frontend Development | Tokyo, Japan",
@@ -180,9 +179,7 @@ const expCards = [
     responsibilities: [
       "Worked on the development of responsive and user-friendly interfaces, focusing on scalability.",
       "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
-      "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
-      "Worked with backend developers and project managers to integrate APIs seamlessly with the frontend.",
-      "Contributed to the design and coding of the website, ensuring a visually appealing and user-friendly experience.",
+      "Contributed to the design and coding of a web application, ensuring a visually appealing and user-friendly experience.",
     ],
   },
   {
@@ -190,7 +187,7 @@ const expCards = [
       "Glenn’s work on Goldware Park's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience and met our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "Software Developer | Tokyo, Japan",
+    title: "Web Developer | Tokyo, Japan",
     date: "August 2024 - September 2024",
     responsibilities: [
       "Built and maintained cross-platform mobile app using React Native and Typescript.",
