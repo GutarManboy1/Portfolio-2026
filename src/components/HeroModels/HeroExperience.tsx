@@ -6,7 +6,6 @@ import SplineScene from "./Computer";
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery ({ query: "(min-width: 1024px)" });
-  const isMobile = useMediaQuery ({ query: "(max-width: 768px)" });
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>

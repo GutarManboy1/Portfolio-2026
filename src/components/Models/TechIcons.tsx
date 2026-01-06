@@ -3,18 +3,27 @@ import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-const TechIcons = ({ model }) => {
+interface TechIconsProps {
+  model: {
+    name: string;
+    modelPath: string;
+    scale: number;
+    rotation: [number, number, number];
+  };
+}
+
+const TechIcons = ({ model }: TechIconsProps) => {
   const scene = useGLTF(model.modelPath);
 
   useEffect(() => {
     if (model.name === "Interactive Developer") {
-      scene.scene.traverse((child) => {
-        if (child.isMesh && child.name === "Object_5") {
-          child.material = new THREE.MeshStandardMaterial({ color: "white" });
+      scene.scene.traverse((child: THREE.Object3D) => {
+        if ((child as THREE.Mesh).isMesh && child.name === "Object_5") {
+          (child as THREE.Mesh).material = new THREE.MeshStandardMaterial({ color: "white" });
         }
       });
     }
-  }, [scene]);
+  }, [scene, model.name]);
 
   return (
     <Canvas>

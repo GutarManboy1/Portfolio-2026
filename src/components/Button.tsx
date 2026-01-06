@@ -1,4 +1,10 @@
-const Button = ({ text, className, id }) => {
+interface ButtonProps {
+  text: string;
+  className?: string;
+  id?: string;
+}
+
+const Button = ({ text, className, id }: ButtonProps) => {
   return (
     <a
       onClick={(e) => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleHeader from '../components/TitleHeader'
 import { testimonials } from '../constants'
 
@@ -11,8 +10,8 @@ const Testimonials = () => {
             <TitleHeader title='Word on the Street' subtitle='What My (imaginary) Clients Say About Me' />
 
             <div className='lg:columns-3 md:columns-2 columns-1 mt-16'>
-                {testimonials.map(({imgPath, name, mentions, review}) => (
-                    <GlowCard card={{review}}>
+                {testimonials.map(({imgPath, name, mentions, review}, index) => (
+                    <GlowCard card={{review}} index={index}>
                       <div className='flex items-center gap-3'>
                         <div>
                             <img src={imgPath} alt={name} className='w-12 h-12 rounded-full object-cover' />

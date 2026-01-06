@@ -1,11 +1,15 @@
-
 import { logoIconsList } from '../constants'
 
+interface LogoIconProps {
+    icon: {
+        imgPath: string;
+    };
+}
 
-const LogoIcon = ({ icon }) => {
+const LogoIcon = ({ icon }: LogoIconProps) => {
     return (
         <div className='flex-none flex-center marquee-item'>
-            <img src={icon.imgPath} alt={icon.name} />
+            <img src={icon.imgPath} alt="company logo" />
         </div>
     )
 }
@@ -18,11 +22,11 @@ const LogoSection = () => {
 
         <div className='marquee h-52'>
             <div className='marquee-box md:gap-12 gap-5'>
-                {logoIconsList.map((icon) => (
-                    <LogoIcon key={icon.name} icon={icon} />
+                {logoIconsList.map((icon, index) => (
+                    <LogoIcon key={`logo-1-${index}`} icon={icon} />
                 ))}
-                  {logoIconsList.map((icon) => (
-                    <LogoIcon key={icon.name} icon={icon} />
+                  {logoIconsList.map((icon, index) => (
+                    <LogoIcon key={`logo-2-${index}`} icon={icon} />
                 ))}
             </div>
         </div>
