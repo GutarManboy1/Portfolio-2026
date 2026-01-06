@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Experience = () => {
   useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
+    gsap.utils.toArray<Element>(".timeline-card").forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -37,7 +37,7 @@ const Experience = () => {
         },
       },
     });
-    gsap.utils.toArray(".expText").forEach((text) => {
+    gsap.utils.toArray<Element>(".expText").forEach((text) => {
       gsap.from(text, {
         xPercent: 0,
         opacity: 0,
@@ -92,7 +92,7 @@ const Experience = () => {
                         <p className="my-5 text-white-50">🗓️ {card.date}</p>
                         <p className="text-[#839cb5] italic">Responsibilites</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                          {card.responsibilities.map((responsibility, idx) => (
+                          {card.responsibilities.map((responsibility) => (
                             <li key={responsibility} className="text-lg">
                               {responsibility}
                             </li>

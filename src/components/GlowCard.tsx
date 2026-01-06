@@ -1,9 +1,15 @@
 import { useRef } from "react";
 
-const GlowCard = ({ card, children, index }) => {
-  const cardRefs = useRef([]);
+interface GlowCardProps {
+  card: { review: string };
+  children: React.ReactNode;
+  index: number;
+}
 
-  const handleMouseMove = (index) => (e) => {
+const GlowCard = ({ card, children, index }: GlowCardProps) => {
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const handleMouseMove = (index: number) => (e: React.MouseEvent) => {
     const card = cardRefs.current[index];
     if (!card) return;
 
@@ -16,12 +22,12 @@ const GlowCard = ({ card, children, index }) => {
 
     angle = (angle + 360) % 360;
 
-    card.style.setProperty("--start", angle + 60);
+    card.style.setProperty("--start", `${angle + 60}`);
   };
 
   return (
     <div
-      ref={(el) => (cardRefs.current[index] = el)}
+      ref={(el) => { cardRefs.current[index] = el; }}
       onMouseMove={handleMouseMove(index)}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >
