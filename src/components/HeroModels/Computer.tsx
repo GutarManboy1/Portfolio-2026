@@ -11,5 +11,5 @@ export default function SplineScene() {
     }
   }, []);
 
-  return <canvas  ref={canvasRef}/>;
+  return <canvas ref={canvasRef} style={{ width: '100%', height: '100%', display: 'block' }} />;
 }

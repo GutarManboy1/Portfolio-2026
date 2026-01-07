@@ -54,7 +54,7 @@ const Hero = () => {
               <h1>that Matter</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10">
-              Sup, I'm Glenn a developer based in Japan.
+              Hey, I'm Glenn a developer based in Japan.
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
